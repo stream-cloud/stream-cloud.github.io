@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Nonton Naruto Sub Indo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="streaming naruto full episode subtitle indonesia" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="dist/plyr.css" />
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.dropbtn {
+  background-color: #3498DB;
+  width: 360px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 360px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1280px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+		<h1>Nonton Naruto Sub Indo</h1>
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn">Pilih Episode:</button>
+		  <div id="myDropdown" class="dropdown-content">
+			<a href="#home">Episode 1</a>
+			<a href="#about">Episode 2</a>
+			<a href="#contact">Episode 3</a>
+		  </div>
+		</div>
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-grey w3-margin-bottom">
+		<video poster="img/home.jpg" id="player" controls>
+			<source src="https://r6---sn-25ge7nse.googlevideo.com/videoplayback?expire=1580400343&ei=V44yXqWbDcu98wSizoPYAg&ip=2001:bc8:6005:1a:aa1e:84ff:fe96:9124&id=e01cf87a8896fdbc&itag=18&source=blogger&mm=31&mn=sn-25ge7nse&ms=au&mv=m&mvi=5&pl=44&susc=bl&mime=video/mp4&dur=1386.579&lmt=1515005264503910&mt=1580371451&sparams=expire,ei,ip,id,itag,source,susc,mime,dur,lmt&sig=ALgxI2wwRAIgWg12E7AgBBf9akup0uhmTXjfUD8fa6e_kcdUFJdJnH8CICSi7--bXrKRYV3xi87PhhnM_oX6_D7ss08WT3-kPGMv&lsparams=mm,mn,ms,mv,mvi,pl&lsig=AHylml4wRgIhAPN_UYNdLq6nCvtwlqheJEFTQZubVK5i4cl-pyZ5jKQXAiEAslZluorSKyRL0fdRUEcFQy5QoMbN5KCnWUWG3AXaoeY%3D" type="video/mp4" />
+		</video>
+      </div>
+	  
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-indigo w3-center w3-margin-top">
+  <p>2020 <a href="https://nonton.ga">Nonton . Ga | Allright Reserved</a></p>
+</footer>
+
+<script src="dist/plyr.js"></script>
+<script>
+	const player = new Plyr('#player');
+	
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+</script>
+</body>
+</html>
